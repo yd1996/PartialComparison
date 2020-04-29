@@ -4,12 +4,7 @@ import json
 from utils.vocab import Vocab
 from modules.language_model import build_language_model
 from modules.classifier import build_attribute_classifier
-import models.cross_alignment as cross_alignment
-import models.style_transformer as style_transformer
-import models.multi_decoders as multi_decoders
-import models.controlled_generator as control_gen
 import models.partial_comparison as partial_comparison
-import models.SentiGAN as SentiGAN
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--model", type=str, default="cross_alignment")
